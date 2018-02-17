@@ -1,2 +1,4 @@
 //META{"name":"Hiks Loader","description":"Divine ass to rule them all!","author":"Hiki","version":"1.0.0"}*//{}
-@import url();
+/* Load stuff from STBL ("Stuff To Be loaded") file for dynamics sake! */
+
+@import url(https://raw.githubusercontent.com/imh1kiko/HiksLoader/master/STBL.css);
