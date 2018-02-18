@@ -2,3 +2,25 @@
 @import 'https://fonts.googleapis.com/css?family=Caveat';
 @import 'https://fonts.googleapis.com/css?family=Bad+Script';
 @import 'https://fonts.googleapis.com/css?family=Sacramento';
+/* Update 18.02.2018 */
+
+@import 'https://fonts.googleapis.com/css?family=Satisfy';
+@import 'https://fonts.googleapis.com/css?family=Shadows+Into+Light';
+@import 'https://fonts.googleapis.com/css?family=Dancing+Script';
+@import 'https://fonts.googleapis.com/css?family=Crafty+Girls';
+@import 'https://fonts.googleapis.com/css?family=Over+the+Rainbow';
+@import 'https://fonts.googleapis.com/css?family=Lakki+Reddy';
+@import 'https://fonts.googleapis.com/css?family=Mr+Bedfort';
+/* Some scripts */
+
+em {
+  font-family: var(--i-family);
+  padding: var(--i-pad);
+  font-size: var(--i-size);
+}
+
+strong {
+  font-family: var(--b-family);
+  padding: var(--b-pad);
+  font-size: var(--b-size);
+}
