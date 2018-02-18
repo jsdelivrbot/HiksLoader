@@ -24,3 +24,48 @@ strong {
   padding: var(--b-pad);
   font-size: var(--b-size);
 }
+
+/* Stuff */
+
+.edited {
+  animation: blink 2s ease-in-out infinite;
+  font-size: 13px !important;
+}
+
+.member-status-idle>.avatar-small, [class*="theme-"] [class*="avatar-"] [class*="idle"], [class*="theme-"] [class*="avatar-"] [class*="Idle"] {
+  animation: idling 3s ease-in-out infinite;
+}
+
+.member-status-dnd>.avatar-small, [class*="theme-"] [class*="avatar-"] [class*="dnd"] {
+  animation: busy 3s ease-in-out infinite;
+}
+
+@keyframes idling {
+  0%, 100% {
+    border-color: #ffbe54;
+  }
+  50% {
+    border-color: #9a4218;
+  }
+}
+
+@keyframes busy {
+  /* Default */
+  0%, 100 {
+    border-color: #330806;
+  }
+  /* Intense red */
+  50%, 60% {
+    border-color: #bd4e17;
+    filter: blur(1.6px) saturate(160%);
+  }
+}
+
+@keyframes blink {
+  0%, 60%, 80%, 100% {
+    color: gray;
+  }
+  70%, 90% {
+    color: white;
+  }
+}
