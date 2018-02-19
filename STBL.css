@@ -25,6 +25,13 @@ strong {
   font-size: var(--b-size);
 }
 
+/*  For Zertox Clearvision  */
+
+body::after, .callout-backdrop, .user-popout::before, #user-profile-modal .header::before, #pubs-container::before, .auth-background, .auth-tiling-bg, .invite-modal .invite-splash, .radio-theme.light label, .radio-theme.dark label {
+  background-image: url(var(--z-background)) !important;
+  /* IMPORTANT: Link must be HTTPS! */
+}
+
 /* Stuff */
 
 .edited {
