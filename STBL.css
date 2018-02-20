@@ -29,8 +29,10 @@ Tell me to fuck off whenever you feel the need to.
 .radio-theme.light label,
 .user-popout::before,
 body::after {
-  background-image: url(var(--z-background)) !important;
+  background-image: var(--z-background) !important;
 }
+
+/* Usage in root: --z-background: url(#);
 
 /* Zerebos RadialStatus */
 @import 'https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css'; /* Initial font imports */
