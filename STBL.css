@@ -1,4 +1,4 @@
-/* Update version: 1.1.0_d20022018_1531 */
+/* Update version: 1.1.0_d20022018_1918 */
 
 /*** REQUIRED:
 Zerthox ClearVision
@@ -11,7 +11,7 @@ Tell me to fuck off whenever you feel the need to.
 ***/
 
 /* Zerhox ClearVision */
-@import url(https://gitcdn.xyz/repo/Zerthox/ClearVision/master/css/ClearVision_v5.min.css);
+@import url("https://gitcdn.xyz/repo/Zerthox/ClearVision/master/css/ClearVision_v5.min.css");
 
 :root {
   --main-color: #2780e6;
@@ -37,20 +37,21 @@ body::after {
 /* Usage in root: --z-background: url(#);
 
 /* Zerebos RadialStatus */
-@import url(https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css);
+@import url("https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css");
 
 /* Initial font imports */
-@import 'https://fonts.googleapis.com/css?family=Caveat';
-@import 'https://fonts.googleapis.com/css?family=Bad+Script';
-@import 'https://fonts.googleapis.com/css?family=Sacramento';
+@import url("https://fonts.googleapis.com/css?family=Caveat");
+@import url("https://fonts.googleapis.com/css?family=Bad+Script");
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
+
 /* Update 18.02.2018 */
-@import 'https://fonts.googleapis.com/css?family=Satisfy';
-@import 'https://fonts.googleapis.com/css?family=Shadows+Into+Light';
-@import 'https://fonts.googleapis.com/css?family=Dancing+Script';
-@import 'https://fonts.googleapis.com/css?family=Crafty+Girls';
-@import 'https://fonts.googleapis.com/css?family=Over+the+Rainbow';
-@import 'https://fonts.googleapis.com/css?family=Lakki+Reddy';
-@import 'https://fonts.googleapis.com/css?family=Mr+Bedfort';
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+@import url("https://fonts.googleapis.com/css?family=Crafty+Girls");
+@import url("https://fonts.googleapis.com/css?family=Over+the+Rainbow");
+@import url("https://fonts.googleapis.com/css?family=Lakki+Reddy");
+@import url("https://fonts.googleapis.com/css?family=Mr+Bedfort");
 
 /* Some variables which can be used through :root{} */
 
