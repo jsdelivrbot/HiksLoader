@@ -18,7 +18,7 @@ Tell me to fuck off whenever you feel the need to.
   --background-brightness: 100%;
 }
 
-/*  Variable for background  */
+/*  Switching out this for a variable.  */
 #pubs-container::before,
 #user-profile-modal .header::before,
 .auth-background,
@@ -122,3 +122,5 @@ strong {
     color: white;
   }
 }
+
+/* "Busy" has been removed. Disliked the effect. */
