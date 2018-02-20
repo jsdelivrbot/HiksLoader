@@ -50,13 +50,13 @@ body::after {
 
 /* Some variables which can be used through :root{} */
 em {
-  font-family: var(--i-family);
+  font-family: var(--i-f);
   padding: var(--i-pad);
   font-size: var(--i-size);
 }
 
 strong {
-  font-family: var(--b-family);
+  font-family: var(--b-f);
   padding: var(--b-pad);
   font-size: var(--b-size);
 }
