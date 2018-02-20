@@ -37,7 +37,9 @@ body::after {
 /* Usage in root: --z-background: url(#);
 
 /* Zerebos RadialStatus */
-@import 'https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css'; /* Initial font imports */
+@import url(https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css);
+
+/* Initial font imports */
 @import 'https://fonts.googleapis.com/css?family=Caveat';
 @import 'https://fonts.googleapis.com/css?family=Bad+Script';
 @import 'https://fonts.googleapis.com/css?family=Sacramento';
