@@ -1,4 +1,4 @@
-/* Update version: 1.1.0_d20022018_1441 */
+/* Update version: 1.1.0_d20022018_1531 */
 
 /*** REQUIRED:
 Zerthox ClearVision
@@ -53,6 +53,12 @@ body::after {
 @import 'https://fonts.googleapis.com/css?family=Mr+Bedfort';
 
 /* Some variables which can be used through :root{} */
+
+/* Feeding two variables, giving potentially more customization?
+  Or just won't work at all, i guess.
+  Have to find a way to have Discord flush the current files.
+  Or just make a local theme? *shrugs* Will see. */
+
 em {
   font-family: var(--i-f, --i-gf);
   padding: var(--i-pad);
