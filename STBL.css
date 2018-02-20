@@ -1,8 +1,43 @@
+/*** REQUIRED:
+Zerthox ClearVision
+Zerebos RadialStatus
+
+Importing both without their permission. Sorry, guys.
+Theme files obviously belong to them. You (Zerthox and Zerebos) have all the rights.
+Tell me to fuck off whenever you feel the need to.
+
+***/
+
+/* Zerhox ClearVision */
+@import url(https://gitcdn.xyz/repo/Zerthox/ClearVision/master/css/ClearVision_v5.min.css);
+
+:root {
+  --main-color: #2780e6;
+  --hover-color: #1e63b3;
+  --background-blur: 0;
+  --background-brightness: 100%;
+}
+
+/*  Variable for background  */
+#pubs-container::before,
+#user-profile-modal .header::before,
+.auth-background,
+.auth-tiling-bg,
+.callout-backdrop,
+.invite-modal .invite-splash,
+.radio-theme.dark label,
+.radio-theme.light label,
+.user-popout::before,
+body::after {
+  background-image: url(var(--z-background)) !important;
+}
+
+/* Zerebos RadialStatus */
+@import url(https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css); /* Initial font imports */
 @import 'https://fonts.googleapis.com/css?family=Caveat';
 @import 'https://fonts.googleapis.com/css?family=Bad+Script';
 @import 'https://fonts.googleapis.com/css?family=Sacramento';
 /* Update 18.02.2018 */
-
 @import 'https://fonts.googleapis.com/css?family=Satisfy';
 @import 'https://fonts.googleapis.com/css?family=Shadows+Into+Light';
 @import 'https://fonts.googleapis.com/css?family=Dancing+Script';
@@ -10,8 +45,8 @@
 @import 'https://fonts.googleapis.com/css?family=Over+the+Rainbow';
 @import 'https://fonts.googleapis.com/css?family=Lakki+Reddy';
 @import 'https://fonts.googleapis.com/css?family=Mr+Bedfort';
-/* Some scripts */
 
+/* Some variables which can be used through :root{} */
 em {
   font-family: var(--i-family);
   padding: var(--i-pad);
@@ -24,54 +59,66 @@ strong {
   font-size: var(--b-size);
 }
 
-/*  For Zertox Clearvision  */
-
-body::after, .callout-backdrop, .user-popout::before, #user-profile-modal .header::before, #pubs-container::before, .auth-background, .auth-tiling-bg, .invite-modal .invite-splash, .radio-theme.light label, .radio-theme.dark label {
-  background-image: url(var(--z-background)) !important;
-  /* IMPORTANT: Link must be HTTPS! */
-}
-
-/* Stuff */
-
 .edited {
+  -webkit-animation: blink 2s ease-in-out infinite;
   animation: blink 2s ease-in-out infinite;
   font-size: 13px !important;
 }
 
-.member-status-idle>.avatar-small, [class*="theme-"] [class*="avatar-"] [class*="idle"], [class*="theme-"] [class*="avatar-"] [class*="Idle"] {
+.member-status-idle > .avatar-small,
+[class*="theme-"] [class*="avatar-"] [class*="idle"],
+[class*="theme-"] [class*="avatar-"] [class*="Idle"] {
+  -webkit-animation: idling 3s ease-in-out infinite;
   animation: idling 3s ease-in-out infinite;
 }
 
-.member-status-dnd>.avatar-small, [class*="theme-"] [class*="avatar-"] [class*="dnd"] {
-  animation: busy 3s ease-in-out infinite;
-}
-
-@keyframes idling {
-  0%, 100% {
+/* Something keeps creating these vvv. Not neccesarily bothered by it.*/
+@-webkit-keyframes idling {
+  0%,
+  100% {
     border-color: #ffbe54;
   }
+
   50% {
     border-color: #9a4218;
   }
 }
 
-@keyframes busy {
-  /* Default */
-  0%, 100 {
-    border-color: #330806;
+@keyframes idling {
+  0%,
+  100% {
+    border-color: #ffbe54;
   }
-  /* Intense red */
-  50%, 60% {
-    border-color: #bd4e17;
-    filter: blur(1.6px) saturate(160%);
+
+  50% {
+    border-color: #9a4218;
+  }
+}
+
+@-webkit-keyframes blink {
+  0%,
+  100%,
+  60%,
+  80% {
+    color: gray;
+  }
+
+  70%,
+  90% {
+    color: white;
   }
 }
 
 @keyframes blink {
-  0%, 60%, 80%, 100% {
+  0%,
+  100%,
+  60%,
+  80% {
     color: gray;
   }
-  70%, 90% {
+
+  70%,
+  90% {
     color: white;
   }
 }
