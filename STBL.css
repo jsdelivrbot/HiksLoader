@@ -1,5 +1,4 @@
-/* Update version: 1.1.0_d20022018_1918 */
-
+/* Update version: 1.1.0_d20022018_1927 */
 /*** REQUIRED:
 Zerthox ClearVision
 Zerebos RadialStatus
@@ -9,18 +8,17 @@ Theme files obviously belong to them. You (Zerthox and Zerebos) have all the rig
 Tell me to fuck off whenever you feel the need to.
 
 ***/
-
 /* Zerhox ClearVision */
 @import url("https://gitcdn.xyz/repo/Zerthox/ClearVision/master/css/ClearVision_v5.min.css");
 
 :root {
-  --main-color: #2780e6;
-  --hover-color: #1e63b3;
-  --background-blur: 0;
+  --main-color           : #2780e6;
+  --hover-color          : #1e63b3;
+  --background-blur      : 0;
   --background-brightness: 100%;
 }
-
 /*  Switching out this for a variable.  */
+
 #pubs-container::before,
 #user-profile-modal .header::before,
 .auth-background,
@@ -33,7 +31,6 @@ Tell me to fuck off whenever you feel the need to.
 body::after {
   background-image: var(--z-background) !important;
 }
-
 /* Usage in root: --z-background: url(#);
 
 /* Zerebos RadialStatus */
@@ -62,29 +59,28 @@ body::after {
 
 em {
   font-family: var(--i-f, --i-gf);
-  padding: var(--i-pad);
-  font-size: var(--i-size);
+  padding    : var(--i-pad);
+  font-size  : var(--i-size);
 }
 
 strong {
   font-family: var(--b-f, --b-gf);
-  padding: var(--b-pad);
-  font-size: var(--b-size);
+  padding    : var(--b-pad);
+  font-size  : var(--b-size);
 }
 
 .edited {
   -webkit-animation: blink 2s ease-in-out infinite;
-  animation: blink 2s ease-in-out infinite;
-  font-size: 13px !important;
+  animation        : blink 2s ease-in-out infinite;
+  font-size        : 13px !important;
 }
 
 .member-status-idle > .avatar-small,
 [class*="theme-"] [class*="avatar-"] [class*="idle"],
 [class*="theme-"] [class*="avatar-"] [class*="Idle"] {
   -webkit-animation: idling 3s ease-in-out infinite;
-  animation: idling 3s ease-in-out infinite;
+  animation        : idling 3s ease-in-out infinite;
 }
-
 /* Something keeps creating these vvv. Not neccesarily bothered by it.*/
 @-webkit-keyframes idling {
   0%,
@@ -96,7 +92,6 @@ strong {
     border-color: #9a4218;
   }
 }
-
 @keyframes idling {
   0%,
   100% {
@@ -107,7 +102,6 @@ strong {
     border-color: #9a4218;
   }
 }
-
 @-webkit-keyframes blink {
   0%,
   100%,
@@ -121,7 +115,6 @@ strong {
     color: white;
   }
 }
-
 @keyframes blink {
   0%,
   100%,
@@ -135,5 +128,4 @@ strong {
     color: white;
   }
 }
-
 /* "Busy" has been removed. Disliked the effect. */
