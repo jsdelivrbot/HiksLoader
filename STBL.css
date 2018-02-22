@@ -1,5 +1,4 @@
-/* Update version: 1.1.1_d22022018_1925 */
-
+/* Update version: 1.1.1_d22022018_1945 */
 /*** REQUIRED:
 Zerthox ClearVision
 Zerebos RadialStatus
@@ -9,11 +8,11 @@ Theme files obviously belong to them. You (Zerthox and Zerebos) have all the rig
 Tell me to fuck off whenever you feel the need to.
 
 ***/
+
 /* Loading Fonts before anything in hopes to get them to load first*/
 @import url("https://fonts.googleapis.com/css?family=Caveat");
 @import url("https://fonts.googleapis.com/css?family=Bad+Script");
 @import url("https://fonts.googleapis.com/css?family=Sacramento");
-
 /* Update 18.02.2018 */
 @import url("https://fonts.googleapis.com/css?family=Satisfy");
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
@@ -22,8 +21,6 @@ Tell me to fuck off whenever you feel the need to.
 @import url("https://fonts.googleapis.com/css?family=Over+the+Rainbow");
 @import url("https://fonts.googleapis.com/css?family=Lakki+Reddy");
 @import url("https://fonts.googleapis.com/css?family=Mr+Bedfort");
-
-/* Some variables which can be used through :root{} */
 
 /* Zerebos RadialStatus */
 @import url("https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css");
@@ -63,6 +60,13 @@ strong {
   font-family: var(--b-f, --b-gf);
   padding    : var(--b-pad);
   font-size  : var(--b-size);
+}
+
+.member-activity-text > strong {
+  font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+  padding    : 0 !important;
+  margin     : 0;
+  font-size  : inherit;
 }
 
 .edited {
