@@ -8,6 +8,22 @@ Theme files obviously belong to them. You (Zerthox and Zerebos) have all the rig
 Tell me to fuck off whenever you feel the need to.
 
 ***/
+/* Loading Fonts before anything in hopes to get them to load first*/
+@import url("https://fonts.googleapis.com/css?family=Caveat");
+@import url("https://fonts.googleapis.com/css?family=Bad+Script");
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
+
+/* Update 18.02.2018 */
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+@import url("https://fonts.googleapis.com/css?family=Crafty+Girls");
+@import url("https://fonts.googleapis.com/css?family=Over+the+Rainbow");
+@import url("https://fonts.googleapis.com/css?family=Lakki+Reddy");
+@import url("https://fonts.googleapis.com/css?family=Mr+Bedfort");
+
+/* Some variables which can be used through :root{} */
+
 /* Zerebos RadialStatus */
 @import url("https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css");
 
@@ -35,27 +51,6 @@ body::after {
   background-image: var(--z-background) !important;
 }
 /* Usage in root: --z-background: url(#); */
-
-/* Initial font imports */
-@import url("https://fonts.googleapis.com/css?family=Caveat");
-@import url("https://fonts.googleapis.com/css?family=Bad+Script");
-@import url("https://fonts.googleapis.com/css?family=Sacramento");
-
-/* Update 18.02.2018 */
-@import url("https://fonts.googleapis.com/css?family=Satisfy");
-@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
-@import url("https://fonts.googleapis.com/css?family=Crafty+Girls");
-@import url("https://fonts.googleapis.com/css?family=Over+the+Rainbow");
-@import url("https://fonts.googleapis.com/css?family=Lakki+Reddy");
-@import url("https://fonts.googleapis.com/css?family=Mr+Bedfort");
-
-/* Some variables which can be used through :root{} */
-
-/* Feeding two variables, giving potentially more customization?
-  Or just won't work at all, i guess.
-  Have to find a way to have Discord flush the current files.
-  Or just make a local theme? *shrugs* Will see. */
 
 em {
   font-family: var(--i-f, --i-gf);
