@@ -81,6 +81,10 @@ strong {
   -webkit-animation: idling 3s ease-in-out infinite;
   animation        : idling 3s ease-in-out infinite;
 }
+
+.message{
+  padding: 5px 0;
+}
 /* Something keeps creating these vvv. Not neccesarily bothered by it.*/
 @-webkit-keyframes idling {
   0%,
