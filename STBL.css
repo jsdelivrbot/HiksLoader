@@ -8,6 +8,9 @@ Theme files obviously belong to them. You (Zerthox and Zerebos) have all the rig
 Tell me to fuck off whenever you feel the need to.
 
 ***/
+/* Zerebos RadialStatus */
+@import url("https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css");
+
 /* Zerhox ClearVision */
 @import url("https://gitcdn.xyz/repo/Zerthox/ClearVision/master/css/ClearVision_v5.min.css");
 
@@ -32,9 +35,6 @@ body::after {
   background-image: var(--z-background) !important;
 }
 /* Usage in root: --z-background: url(#); */
-
-/* Zerebos RadialStatus */
-@import url("https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css");
 
 /* Initial font imports */
 @import url("https://fonts.googleapis.com/css?family=Caveat");
