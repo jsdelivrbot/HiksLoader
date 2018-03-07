@@ -1,4 +1,5 @@
-/* Update version: 1.1.1_d22022018_1945 */
+/* Version: 1.1.2_d7032018_2002 */
+
 /*** REQUIRED:
 Zerthox ClearVision
 Zerebos RadialStatus
@@ -9,7 +10,6 @@ Tell me to fuck off whenever you feel the need to.
 
 ***/
 
-/* Loading Fonts before anything in hopes to get them to load first*/
 @import url("https://fonts.googleapis.com/css?family=Caveat");
 @import url("https://fonts.googleapis.com/css?family=Bad+Script");
 @import url("https://fonts.googleapis.com/css?family=Sacramento");
@@ -81,10 +81,15 @@ strong {
   -webkit-animation: idling 3s ease-in-out infinite;
   animation        : idling 3s ease-in-out infinite;
 }
+
+.member-status-dnd {
+	-webkit-animation: dnd 4s cubic-bezier(0.88,-0.02, 0, 0.36) infinite;
+	        animation: dnd 4s cubic-bezier(0.88,-0.02, 0, 0.36) infinite;
+}
+
 /* Something keeps creating these vvv. Not neccesarily bothered by it.*/
 @-webkit-keyframes idling {
-  0%,
-  100% {
+  0%, 100% {
     border-color: #ffbe54;
   }
 
@@ -93,8 +98,7 @@ strong {
   }
 }
 @keyframes idling {
-  0%,
-  100% {
+  0%, 100% {
     border-color: #ffbe54;
   }
 
@@ -103,29 +107,42 @@ strong {
   }
 }
 @-webkit-keyframes blink {
-  0%,
-  100%,
-  60%,
-  80% {
+  0%, 100%, 60%, 80% {
     color: gray;
   }
 
-  70%,
-  90% {
+  70%, 90% {
     color: white;
   }
 }
 @keyframes blink {
-  0%,
-  100%,
-  60%,
-  80% {
+  0%, 100%, 60%, 80% {
     color: gray;
   }
 
-  70%,
-  90% {
+  70%, 90% {
     color: white;
   }
 }
-/* "Busy" has been removed. Disliked the effect. */
+
+@-webkit-keyframes dnd {
+    0%, 100% {
+    	-webkit-filter: grayscale(0%) blur(0px);
+    	        filter: grayscale(0%) blur(0px);
+    }
+    50% {
+    	-webkit-filter: grayscale(100%) blur(1px);
+    	        filter: grayscale(100%) blur(1px);
+    }
+}
+
+@keyframes dnd {
+    0%, 100% {
+    	-webkit-filter: grayscale(0%) blur(0px);
+    	        filter: grayscale(0%) blur(0px);
+    }
+    50% {
+    	-webkit-filter: grayscale(100%) blur(1px);
+    	        filter: grayscale(100%) blur(1px);
+    }
+}
