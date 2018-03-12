@@ -1,4 +1,4 @@
-/* Version: 1.1.2_d7032018_2002 */
+/* Version: 1.1.2_d12032018_2036 */
 
 /*** REQUIRED:
 Zerthox ClearVision
@@ -22,11 +22,11 @@ Tell me to fuck off whenever you feel the need to.
 @import url("https://fonts.googleapis.com/css?family=Lakki+Reddy");
 @import url("https://fonts.googleapis.com/css?family=Mr+Bedfort");
 
+/* Zerthox ClearVision */
+@import url("https://gitcdn.xyz/repo/Zerthox/ClearVision/master/css/ClearVision_v5.min.css");
+
 /* Zerebos RadialStatus */
 @import url("https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css");
-
-/* Zerhox ClearVision */
-@import url("https://gitcdn.xyz/repo/Zerthox/ClearVision/master/css/ClearVision_v5.min.css");
 
 :root {
   --main-color           : #2780e6;
