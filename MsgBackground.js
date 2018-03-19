@@ -11,7 +11,7 @@ var closestParentBot = $('strong[style="color: rgb(31, 139, 76);"]').closest(".m
 // DOES NOT HAVE ".message-text"
 if ($(".message").not(".message-text")) {
 	// IF It's empty, ignore.
-	if ($(closestParentBot > ".accessory").is(":empty")) {} else {
+	if ($(closestParentBot).find(".accessory").is(":empty")) {} else {
 		$(closestParentBot).find(".accessory")
 			.css({
 				background: "url(https://pa1.narvii.com/5579/b6a9020b6bf1efbda206edaa547ea8cc432739e8_hq.gif) 0 0 / cover no-repeat",
@@ -25,7 +25,7 @@ if ($(".message").not(".message-text")) {
 
 if ($(".message").has(".message-text")) {
 	//Find message-text and apply css, if empty, ignore
-	if ($(closestParentBot > ".message-text").is(":empty")) {} else {
+	if ($(closestParentBot).find(".markup").is(":empty")) {} else {
 		$(closestParentBot).find(".message-text")
 			.css({
 				background: "url(https://pa1.narvii.com/5579/b6a9020b6bf1efbda206edaa547ea8cc432739e8_hq.gif) 0 0 / cover no-repeat",
