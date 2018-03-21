@@ -1,16 +1,13 @@
 /***
 			--- GLOBAL VARS ---
 ***/
-var closestParentBot = $('strong[style="color: rgb(31, 139, 76);"]').closest(".message-group");
+var closestParentBot = $('strong[style="color: rgb(31, 139, 76);"]').closest(".message");
 
 
 /***
 		--- CODE ---
 ***/
 
-// DOES NOT HAVE ".message-text"
-if ($(".message").not(".message-text")) {
-	// IF It's empty, ignore.
 	if ($(closestParentBot).find(".accessory").is(":empty")) {} else {
 		$(closestParentBot).find(".accessory")
 			.css({
@@ -21,10 +18,7 @@ if ($(".message").not(".message-text")) {
 				"border-radius": "10px"
 			});
 	}
-}
 
-if ($(".message").has(".message-text")) {
-	//Find message-text and apply css, if empty, ignore
 	if ($(closestParentBot).find(".markup").is(":empty")) {} else {
 		$(closestParentBot).find(".message-text")
 			.css({
@@ -35,4 +29,3 @@ if ($(".message").has(".message-text")) {
 				"border-radius": "10px"
 			});
 	}
-}
