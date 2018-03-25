@@ -34,9 +34,8 @@ Tell me to fuck off whenever you feel the need to.
   --background-blur      : 0;
   --background-brightness: 100%;
 }
-/*  Switching out this for a variable.  */
-/* Usage in root: --z-background: url(#); */
-/* Usage of '--z-effects: blur(2px) grayscale(20%) contrast(50%)' etc... */
+/* Usage in root: --z-background: url(#);
+                  --z-effects: blur(2px) grayscale(20%) contrast(50%) etc... */
 
 #pubs-container::before,
 #user-profile-modal .header::before,
@@ -48,9 +47,11 @@ Tell me to fuck off whenever you feel the need to.
 .radio-theme.light label,
 .user-popout::before,
 body::after {
-  background-image: var(--z-background) !important;
-  -webkit-filter: var(--z-effects);
-          filter: var(--z-effects);
+  background-image  : var(--z-background) !important;
+  -webkit-filter    : var(--z-effects);
+  filter            : var(--z-effects);
+  -webkit-box-shadow: var(--z-shadow);
+  box-shadow        : var(--z-shadow);
 }
 
 em {
@@ -86,13 +87,13 @@ strong {
 }
 
 .member-status-dnd {
-	-webkit-animation: dnd 4s cubic-bezier(0.88,-0.02, 0, 0.36) infinite;
-	        animation: dnd 4s cubic-bezier(0.88,-0.02, 0, 0.36) infinite;
+  -webkit-animation: dnd 4s cubic-bezier(0.88,-0.02, 0, 0.36) infinite;
+  animation        : dnd 4s cubic-bezier(0.88,-0.02, 0, 0.36) infinite;
 }
-
 /* Something keeps creating these vvv. Not neccesarily bothered by it.*/
 @-webkit-keyframes idling {
-  0%, 100% {
+  0%,
+  100% {
     border-color: #ffbe54;
   }
 
@@ -101,7 +102,8 @@ strong {
   }
 }
 @keyframes idling {
-  0%, 100% {
+  0%,
+  100% {
     border-color: #ffbe54;
   }
 
@@ -110,42 +112,52 @@ strong {
   }
 }
 @-webkit-keyframes blink {
-  0%, 100%, 60%, 80% {
+  0%,
+  100%,
+  60%,
+  80% {
     color: gray;
   }
 
-  70%, 90% {
+  70%,
+  90% {
     color: white;
   }
 }
 @keyframes blink {
-  0%, 100%, 60%, 80% {
+  0%,
+  100%,
+  60%,
+  80% {
     color: gray;
   }
 
-  70%, 90% {
+  70%,
+  90% {
     color: white;
   }
 }
-
 @-webkit-keyframes dnd {
-    0%, 100% {
-    	-webkit-filter: grayscale(0%) blur(0px);
-    	        filter: grayscale(0%) blur(0px);
-    }
-    50% {
-    	-webkit-filter: grayscale(100%) blur(1px);
-    	        filter: grayscale(100%) blur(1px);
-    }
-}
+  0%,
+  100% {
+    -webkit-filter: grayscale(0%) blur(0px);
+    filter: grayscale(0%) blur(0px);
+  }
 
+  50% {
+    -webkit-filter: grayscale(100%) blur(1px);
+    filter: grayscale(100%) blur(1px);
+  }
+}
 @keyframes dnd {
-    0%, 100% {
-    	-webkit-filter: grayscale(0%) blur(0px);
-    	        filter: grayscale(0%) blur(0px);
-    }
-    50% {
-    	-webkit-filter: grayscale(100%) blur(1px);
-    	        filter: grayscale(100%) blur(1px);
-    }
+  0%,
+  100% {
+    -webkit-filter: grayscale(0%) blur(0px);
+    filter: grayscale(0%) blur(0px);
+  }
+
+  50% {
+    -webkit-filter: grayscale(100%) blur(1px);
+    filter: grayscale(100%) blur(1px);
+  }
 }
