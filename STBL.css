@@ -48,6 +48,8 @@ Tell me to fuck off whenever you feel the need to.
 .user-popout::before,
 body::after {
   background-image: var(--z-background) !important;
+  -webkit-filter: blur(var(--z-blur));
+          filter: blur(var(--z-blur));
 }
 
 em {
