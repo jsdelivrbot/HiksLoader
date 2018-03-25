@@ -1,3 +1,5 @@
+//META{"name":"Bot Background V1"}*//
+
 /***
 			--- GLOBAL VARS ---
 ***/
