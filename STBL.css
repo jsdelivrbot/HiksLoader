@@ -60,10 +60,18 @@ em {
   font-size  : var(--i-size);
 }
 
-strong {
-  font-family: var(--b-f, --b-gf);
-  padding    : var(--b-pad);
-  font-size  : var(--b-size);
+strong:not(.user-name) {
+    -webkit-filter:blur(4px);
+            filter:blur(4px);
+    -webkit-transition: 500ms ease-in-out all;
+    transition: 500ms ease-in-out all;
+}
+
+strong:hover {
+  -webkit-transition: 500ms ease-in-out all;
+  transition: 500ms ease-in-out all;
+  -webkit-filter:blur(0px);
+          filter:blur(0px);
 }
 
 .member-activity-text > strong {
