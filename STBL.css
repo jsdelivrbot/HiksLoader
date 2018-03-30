@@ -1,4 +1,4 @@
-/* Version: 1.1.3_d29032018_2346 */
+/* Version: 1.1.3_d30032018_2250 */
 
 /*** REQUIRED:
 Zerthox ClearVision
@@ -60,7 +60,7 @@ em {
   font-size  : var(--i-size);
 }
 
-strong:not(.user-name, .member-activity strong) {
+strong:not(.user-name) {
     -webkit-filter:blur(4px);
             filter:blur(4px);
     -webkit-transition: 500ms ease-in-out all;
@@ -79,6 +79,8 @@ strong:hover {
   padding    : 0 !important;
   margin     : 0;
   font-size  : inherit;
+  -webkit-filter: blur(0px) !important;
+          filter: blur(0px) !important;
 }
 
 .edited {
