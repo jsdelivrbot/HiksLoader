@@ -72,7 +72,7 @@ strong:hover {
   filter:blur(0px);
 }
 
-.text-1rI06- > * {
+.text-1rI06- > *, [class*="embedDescription-"] > strong {
   -webkit-filter: blur(0px) !important;
           filter: blur(0px) !important;
 }
