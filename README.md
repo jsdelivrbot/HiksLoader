@@ -2,9 +2,9 @@
 Loads stuff for Discord.
 
 Currently loads:
-• Zerthox ClearVision
-• Zerebos RadialStatus
-• Some custom styles
+* Zerthox ClearVision
+* Zerebos RadialStatus
+* Some custom styles
 
 (PS. Don't have those guys permission. Sorry, guys! You still own all the permissions and rights. When you want it removed, you got it done.)
 
