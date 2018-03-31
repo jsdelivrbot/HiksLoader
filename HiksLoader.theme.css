@@ -1,8 +1,9 @@
 //META{"name":"Hiks Loader","description":"Divine ass to rule them all! And also divine boobs!","author":"Hiki","version":"1.0.2"}*//{}
-/* Load stuff from STBL ("Stuff To Be loaded") file for dynamics sake! */
 
-/* Use proper CDN with headers. Otherwise fails to load */
-
-/* 20.02.2018 -- Switched to development CDN. Other one was a permanent one...*/
+/***
+    !!! THIS RUNS ON DEVELOPMENT CDN! That means if I fuck up the code, you'll feel it. !!!
+***/
 
 @import url(https://rawgit.com/imh1kiko/HiksLoader/master/STBL.css);
+
+

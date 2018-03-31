@@ -1,4 +1,5 @@
 /* Version: 1.1.4_d30032018_2259 */
+
 /*** REQUIRED:
 Zerthox ClearVision
 Zerebos RadialStatus
@@ -8,6 +9,7 @@ Theme files obviously belong to them. You (Zerthox and Zerebos) have all the rig
 Tell me to fuck off whenever you feel the need to.
 
 ***/
+
 @import url("https://fonts.googleapis.com/css?family=Caveat");
 @import url("https://fonts.googleapis.com/css?family=Bad+Script");
 @import url("https://fonts.googleapis.com/css?family=Sacramento");
@@ -22,13 +24,15 @@ Tell me to fuck off whenever you feel the need to.
 @import url("https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css");
 
 :root {
-  --main-color           : #2780e6;
-  --hover-color          : #1e63b3;
-  --background-blur      : 0;
+  --main-color: #2780e6;
+  --hover-color: #1e63b3;
+  --background-blur: 0;
   --background-brightness: 100%;
 }
+
 /* Usage in root: --z-background: url(#);
                   --z-effects: blur(2px) grayscale(20%) contrast(50%) etc... */
+
 #pubs-container::before,
 #user-profile-modal .header::before,
 .auth-background,
@@ -39,69 +43,70 @@ Tell me to fuck off whenever you feel the need to.
 .radio-theme.light label,
 .user-popout::before,
 body::after {
-  background-image  : var(--z-background) !important;
-  -webkit-filter : var(--z-effects);
-  filter : var(--z-effects);
+  background-image: var(--z-background) !important;
+  -webkit-filter: var(--z-effects);
+  filter: var(--z-effects);
   -webkit-box-shadow: var(--z-shadow);
-  box-shadow        : var(--z-shadow);
+  box-shadow: var(--z-shadow);
 }
 
 em {
   font-family: var(--i-f, --i-gf);
-  padding    : var(--i-pad);
-  font-size  : var(--i-size);
+  padding: var(--i-pad);
+  font-size: var(--i-size);
 }
 
 .user-name {
   font-family: var(--b-f, --b-gf);
-  padding    : var(--b-pad);
-  font-size  : var(--b-size);
+  padding: var(--b-pad);
+  font-size: var(--b-size);
 }
 
 strong:not(.user-name) {
-  -webkit-filter:blur(4px);
-  filter:blur(4px);
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
   -webkit-transition: 500ms ease-in-out all;
-  transition        : 500ms ease-in-out all;
+  transition: 500ms ease-in-out all;
 }
 
 strong:hover {
   -webkit-transition: 500ms ease-in-out all;
-  transition        : 500ms ease-in-out all;
-  -webkit-filter:blur(0px);
-  filter:blur(0px);
+  transition: 500ms ease-in-out all;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
 }
 
-.text-1rI06- > *, [class*="embedDescription-"] > strong {
+.text-1rI06->*,
+[class*="embedDescription-"]>strong {
   -webkit-filter: blur(0px) !important;
-          filter: blur(0px) !important;
+  filter: blur(0px) !important;
 }
 
-.member-activity-text > strong {
-  font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif !important;
-  padding    : 0 !important;
-  margin     : 0;
-  font-size  : inherit;
+.member-activity-text>strong {
+  font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+  padding: 0 !important;
+  margin: 0;
+  font-size: inherit;
   -webkit-filter: blur(0px) !important;
   filter: blur(0px) !important;
 }
 
 .edited {
   -webkit-animation: blink 2s ease-in-out infinite;
-  animation        : blink 2s ease-in-out infinite;
-  font-size        : 13px !important;
+  animation: blink 2s ease-in-out infinite;
+  font-size: 13px !important;
 }
 
-.member-status-idle > .avatar-small,
+.member-status-idle>.avatar-small,
 [class*="theme-"] [class*="avatar-"] [class*="idle"],
 [class*="theme-"] [class*="avatar-"] [class*="Idle"] {
   -webkit-animation: idling 3s ease-in-out infinite;
-  animation        : idling 3s ease-in-out infinite;
+  animation: idling 3s ease-in-out infinite;
 }
 
 .member-status-dnd {
-  -webkit-animation: dnd 4s cubic-bezier(0.88,-0.02, 0, 0.36) infinite;
-  animation        : dnd 4s cubic-bezier(0.88,-0.02, 0, 0.36) infinite;
+  -webkit-animation: dnd 4s cubic-bezier(0.88, -0.02, 0, 0.36) infinite;
+  animation: dnd 4s cubic-bezier(0.88, -0.02, 0, 0.36) infinite;
 }
 
 @-webkit-keyframes idling {
@@ -109,21 +114,21 @@ strong:hover {
   100% {
     border-color: #ffbe54;
   }
-
   50% {
     border-color: #9a4218;
   }
 }
+
 @keyframes idling {
   0%,
   100% {
     border-color: #ffbe54;
   }
-
   50% {
     border-color: #9a4218;
   }
 }
+
 @-webkit-keyframes blink {
   0%,
   100%,
@@ -131,12 +136,12 @@ strong:hover {
   80% {
     color: gray;
   }
-
   70%,
   90% {
     color: white;
   }
 }
+
 @keyframes blink {
   0%,
   100%,
@@ -144,31 +149,30 @@ strong:hover {
   80% {
     color: gray;
   }
-
   70%,
   90% {
     color: white;
   }
 }
+
 @-webkit-keyframes dnd {
   0%,
   100% {
     -webkit-filter: grayscale(0%) blur(0px);
     filter: grayscale(0%) blur(0px);
   }
-
   50% {
     -webkit-filter: grayscale(100%) blur(1px);
     filter: grayscale(100%) blur(1px);
   }
 }
+
 @keyframes dnd {
   0%,
   100% {
     -webkit-filter: grayscale(0%) blur(0px);
     filter: grayscale(0%) blur(0px);
   }
-
   50% {
     -webkit-filter: grayscale(100%) blur(1px);
     filter: grayscale(100%) blur(1px);
