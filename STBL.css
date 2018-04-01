@@ -1,4 +1,4 @@
-/* Version: 1.1.4_d30032018_2259 */
+/* Version: 1.1.4_d1042018_2139 */
 
 /*** REQUIRED:
 Zerthox ClearVision
@@ -105,7 +105,10 @@ ul li strong,
   animation: idling 3s ease-in-out infinite;
 }
 
-.member-status-dnd {
+.member-status-dnd,
+[class*="theme-"] [class*="avatar-"] [class*="dnd"],
+[class*="theme-"] [class*="avatar-"] [class*="Dnd"],
+.root-2sNHUF [class*="dnd"] {
   -webkit-animation: dnd 4s cubic-bezier(0.88, -0.02, 0, 0.36) infinite;
   animation: dnd 4s cubic-bezier(0.88, -0.02, 0, 0.36) infinite;
 }
