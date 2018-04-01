@@ -76,7 +76,8 @@ strong:hover {
 }
 
 .text-1rI06->*,
-[class*="embedDescription-"]>strong {
+[class*="embedDescription-"]>strong,
+ul li strong {
   -webkit-filter: blur(0px) !important;
   filter: blur(0px) !important;
 }
