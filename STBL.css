@@ -84,7 +84,8 @@ ul li strong,
 [class*="overflow-"] strong,
 span > strong,
 [class*="title-"] > strong,
-.april-fools strong
+.april-fools strong,
+.old-h1 > strong
  {
   -webkit-filter: blur(0px) !important;
   filter: blur(0px) !important;
