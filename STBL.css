@@ -91,7 +91,8 @@ span > strong,
   filter: blur(0px) !important;
 }
 
-.member-activity-text>strong {
+.member-activity-text > strong,
+.friend-activity-text > strong {
   font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif !important;
   padding: 0 !important;
   margin: 0;
