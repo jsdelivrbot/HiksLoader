@@ -1,4 +1,4 @@
-/* Version: 1.1.4_d1042018_2139 */
+/* Version: 1.1.5_d29042018_2023 */
 
 /*** REQUIRED:
 Zerthox ClearVision
@@ -58,6 +58,10 @@ em {
 .user-name {
   font-family: var(--b-f, --b-gf);
   padding: var(--b-pad);
+  font-size: var(--b-size);
+}
+
+.message-group .comment .markup strong {
   font-size: var(--b-size);
 }
 
