@@ -53,6 +53,7 @@ em {
   font-family: var(--i-f, --i-gf);
   padding: var(--i-pad);
   font-size: var(--i-size);
+  color: var(--i-color);
 }
 
 .user-name {
@@ -63,6 +64,7 @@ em {
 
 .message-group .comment .markup strong {
   font-size: var(--b-size);
+  color: var(--b-color);
 }
 
 strong:not(.user-name) {
