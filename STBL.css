@@ -1,4 +1,4 @@
-/* Version: 1.1.5_d29042018_2023 */
+/* Version: 1.1.6_d01052018_0029 */
 
 /*** REQUIRED:
 Zerthox ClearVision
@@ -140,6 +140,10 @@ span > strong,
 
 [class*="statusTyping-"], [class*="statusTypingSpinnerItem-"] {
   background: url("https://raw.githubusercontent.com/imh1kiko/HiksLoader/master/Ripple.svg") !important;
+}
+
+[class*="accountDetails-"]::after {
+  content: "HiksLoader v1.1.6" !important;
 }
 
 @keyframes idling {
