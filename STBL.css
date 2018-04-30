@@ -136,6 +136,10 @@ span > strong,
   }
 }
 
+[class*="statusTyping-"] {
+  
+}
+
 @keyframes idling {
   0%,
   100% {
