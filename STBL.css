@@ -1,4 +1,5 @@
-/* Update version: 1.1.1_d22022018_1945 */
+/* Version: 1.1.5_d29042018_2023 */
+
 /*** REQUIRED:
 Zerthox ClearVision
 Zerebos RadialStatus
@@ -9,11 +10,9 @@ Tell me to fuck off whenever you feel the need to.
 
 ***/
 
-/* Loading Fonts before anything in hopes to get them to load first*/
 @import url("https://fonts.googleapis.com/css?family=Caveat");
 @import url("https://fonts.googleapis.com/css?family=Bad+Script");
 @import url("https://fonts.googleapis.com/css?family=Sacramento");
-/* Update 18.02.2018 */
 @import url("https://fonts.googleapis.com/css?family=Satisfy");
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
@@ -21,21 +20,17 @@ Tell me to fuck off whenever you feel the need to.
 @import url("https://fonts.googleapis.com/css?family=Over+the+Rainbow");
 @import url("https://fonts.googleapis.com/css?family=Lakki+Reddy");
 @import url("https://fonts.googleapis.com/css?family=Mr+Bedfort");
-
-/* Zerebos RadialStatus */
-@import url("https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css");
-
-/* Zerhox ClearVision */
 @import url("https://gitcdn.xyz/repo/Zerthox/ClearVision/master/css/ClearVision_v5.min.css");
-
+@import url("https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css");
 :root {
-  --main-color           : #2780e6;
-  --hover-color          : #1e63b3;
-  --background-blur      : 0;
+  --main-color: #2780e6;
+  --hover-color: #1e63b3;
+  --background-blur: 0;
   --background-brightness: 100%;
 }
-/*  Switching out this for a variable.  */
-/* Usage in root: --z-background: url(#); */
+
+/* Usage in root: --z-background: url(#);
+                  --z-effects: blur(2px) grayscale(20%) contrast(50%) etc... */
 
 #pubs-container::before,
 #user-profile-modal .header::before,
@@ -48,64 +43,109 @@ Tell me to fuck off whenever you feel the need to.
 .user-popout::before,
 body::after {
   background-image: var(--z-background) !important;
+  -webkit-filter: var(--z-effects);
+  filter: var(--z-effects);
+  -webkit-box-shadow: var(--z-shadow);
+  box-shadow: var(--z-shadow);
 }
 
 em {
   font-family: var(--i-f, --i-gf);
-  padding    : var(--i-pad);
-  font-size  : var(--i-size);
+  padding: var(--i-pad);
+  font-size: var(--i-size);
 }
 
-strong {
+.user-name {
   font-family: var(--b-f, --b-gf);
-  padding    : var(--b-pad);
-  font-size  : var(--b-size);
+  padding: var(--b-pad);
+  font-size: var(--b-size);
 }
 
-.member-activity-text > strong {
-  font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif !important;
-  padding    : 0 !important;
-  margin     : 0;
-  font-size  : inherit;
+.message-group .comment .markup strong {
+  font-size: var(--b-size);
+}
+
+strong:not(.user-name) {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+  -webkit-transition: 500ms ease-in-out all;
+  transition: 500ms ease-in-out all;
+}
+
+strong:hover {
+  -webkit-transition: 500ms ease-in-out all;
+  transition: 500ms ease-in-out all;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+
+/* Remove blur */
+
+.text-1rI06->*,
+[class*="embedDescription-"]>strong,
+ul li strong,
+[class*="activityText-"]>strong,
+[class*="overflow-"] strong,
+span > strong,
+[class*="title-"] > strong,
+.april-fools strong,
+.old-h1 > strong
+ {
+  -webkit-filter: blur(0px) !important;
+  filter: blur(0px) !important;
+}
+
+.member-activity-text > strong,
+.friend-activity-text > strong {
+  font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+  padding: 0 !important;
+  margin: 0;
+  font-size: inherit;
+  -webkit-filter: blur(0px) !important;
+  filter: blur(0px) !important;
 }
 
 .edited {
   -webkit-animation: blink 2s ease-in-out infinite;
-  animation        : blink 2s ease-in-out infinite;
-  font-size        : 13px !important;
+  animation: blink 2s ease-in-out infinite;
+  font-size: 13px !important;
 }
 
-.member-status-idle > .avatar-small,
+.member-status-idle>.avatar-small,
 [class*="theme-"] [class*="avatar-"] [class*="idle"],
 [class*="theme-"] [class*="avatar-"] [class*="Idle"] {
   -webkit-animation: idling 3s ease-in-out infinite;
-  animation        : idling 3s ease-in-out infinite;
+  animation: idling 3s ease-in-out infinite;
 }
 
-.message{
-  padding: var(--message-padding);
+.member-status-dnd,
+[class*="theme-"] [class*="avatar-"] [class*="dnd"],
+[class*="theme-"] [class*="avatar-"] [class*="Dnd"],
+.root-2sNHUF [class*="dnd"] {
+  -webkit-animation: dnd 4s cubic-bezier(0.88, -0.02, 0, 0.36) infinite;
+  animation: dnd 4s cubic-bezier(0.88, -0.02, 0, 0.36) infinite;
 }
-/* Something keeps creating these vvv. Not neccesarily bothered by it...*/
+
 @-webkit-keyframes idling {
   0%,
   100% {
     border-color: #ffbe54;
   }
-
   50% {
     border-color: #9a4218;
   }
 }
+
 @keyframes idling {
   0%,
   100% {
     border-color: #ffbe54;
   }
-
   50% {
     border-color: #9a4218;
   }
 }
+
 @-webkit-keyframes blink {
   0%,
   100%,
@@ -113,12 +153,12 @@ strong {
   80% {
     color: gray;
   }
-
   70%,
   90% {
     color: white;
   }
 }
+
 @keyframes blink {
   0%,
   100%,
@@ -126,10 +166,32 @@ strong {
   80% {
     color: gray;
   }
-
   70%,
   90% {
     color: white;
   }
 }
-/* "Busy" has been removed. Disliked the effect. */
+
+@-webkit-keyframes dnd {
+  0%,
+  100% {
+    -webkit-filter: grayscale(0%) blur(0px);
+    filter: grayscale(0%) blur(0px);
+  }
+  50% {
+    -webkit-filter: grayscale(100%) blur(1px);
+    filter: grayscale(100%) blur(1px);
+  }
+}
+
+@keyframes dnd {
+  0%,
+  100% {
+    -webkit-filter: grayscale(0%) blur(0px);
+    filter: grayscale(0%) blur(0px);
+  }
+  50% {
+    -webkit-filter: grayscale(100%) blur(1px);
+    filter: grayscale(100%) blur(1px);
+  }
+}
