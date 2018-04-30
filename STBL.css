@@ -136,8 +136,8 @@ span > strong,
   }
 }
 
-[class*="statusTyping-"] {
-  
+[class*="statusTyping-"], [class*="statusTypingSpinnerItem-"] {
+  background: url("https://raw.githubusercontent.com/imh1kiko/HiksLoader/master/Ripple.svg") !important;
 }
 
 @keyframes idling {
