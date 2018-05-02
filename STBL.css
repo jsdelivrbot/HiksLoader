@@ -1,4 +1,4 @@
-/* Version: 1.1.6_d01052018_0029 */
+/* Version: 1.1.6.1_d02052108_1352 */
 
 /*** REQUIRED:
 Zerthox ClearVision
@@ -143,7 +143,11 @@ span > strong,
 }
 
 [class*="accountDetails-"]::after {
-  content: "HiksLoader v1.1.6" !important;
+  content: "HiksLoader v1.1.6.1" !important;
+}
+
+[class*="embedContentInner-"] strong {
+  font-size: inherit !important;
 }
 
 @keyframes idling {
