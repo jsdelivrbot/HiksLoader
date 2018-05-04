@@ -1,4 +1,9 @@
-/* Version: 1.1.6.1_d02052108_1352 */
+/*
+ * Author: Hiki
+ * Last Modified: 04-05-2018 05:01:07
+ * Version: 1.1.6.2
+ */
+
 
 /*** REQUIRED:
 Zerthox ClearVision
@@ -142,8 +147,9 @@ span > strong,
   background: url("https://raw.githubusercontent.com/imh1kiko/HiksLoader/master/Ripple.svg") !important;
 }
 
+/*  --- VERSION ---   */
 [class*="accountDetails-"]::after {
-  content: "HL v1.1.6.1" !important;
+  content: "HL v1.1.6.2" !important;
 }
 
 [class*="embedContentInner-"] strong {
