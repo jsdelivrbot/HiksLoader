@@ -1,6 +1,6 @@
 /*
  * Author: Hiki
- * Last Modified: 04-05-2018 05:01:07
+ * Last Modified: 04-05-2018 14:50:51
  * Version: 1.1.6.2
  */
 
@@ -147,14 +147,21 @@ span > strong,
   background: url("https://raw.githubusercontent.com/imh1kiko/HiksLoader/master/Ripple.svg") !important;
 }
 
-/*  --- VERSION ---   */
+[class*="embedContentInner-"] strong {
+  font-size: inherit !important;
+}
+
+/* * * * * * * * * * */
+/*  --- VERSION ---  */
+/* * * * * * * * * * */
+
 [class*="accountDetails-"]::after {
   content: "HL v1.1.6.2" !important;
 }
 
-[class*="embedContentInner-"] strong {
-  font-size: inherit !important;
-}
+/* * * * * * * * * * */
+/* ----------------- */
+
 
 @keyframes idling {
   0%,
