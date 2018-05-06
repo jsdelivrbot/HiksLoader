@@ -1,9 +1,8 @@
 /*
  * Author: Hiki
- * Last Modified: 04-05-2018 14:50:51
- * Version: 1.1.6.2
+ * Last Modified: 06-05-2018 23:40:40
+ * Version: 1.1.6.3
  */
-
 
 /*** REQUIRED:
 Zerthox ClearVision
@@ -93,17 +92,16 @@ strong:hover {
 ul li strong,
 [class*="activityText-"]>strong,
 [class*="overflow-"] strong,
-span > strong,
-[class*="title-"] > strong,
+span>strong,
+[class*="title-"]>strong,
 .april-fools strong,
-.old-h1 > strong
- {
+.old-h1>strong {
   -webkit-filter: blur(0px) !important;
   filter: blur(0px) !important;
 }
 
-.member-activity-text > strong,
-.friend-activity-text > strong {
+.member-activity-text>strong,
+.friend-activity-text>strong {
   font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif !important;
   padding: 0 !important;
   margin: 0;
@@ -143,25 +141,34 @@ span > strong,
   }
 }
 
-[class*="statusTyping-"], [class*="statusTypingSpinnerItem-"] {
-  background: url("https://raw.githubusercontent.com/imh1kiko/HiksLoader/master/Ripple.svg") !important;
-}
-
 [class*="embedContentInner-"] strong {
   font-size: inherit !important;
 }
 
-/* * * * * * * * * * */
-/*  --- VERSION ---  */
-/* * * * * * * * * * */
-
-[class*="accountDetails-"]::after {
-  content: "HL v1.1.6.2" !important;
+[class*="searchOption-"] {
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
-/* * * * * * * * * * */
-/* ----------------- */
+[class*="innerNoAutocomplete-"] {
+  border-radius: 10px;
+}
 
+[class*="nameUnreadText-"] {
+  -webkit-animation: unReadMessage 1.5s ease-in-out infinite;
+          animation: unReadMessage 1.5s ease-in-out infinite;
+}
+
+/* ----------------- */
+/*  --- VERSION ---  */
+/* v v v v v v v v v */
+
+[class*="accountDetails-"]::after {
+  content: "HL v1.1.6.3" !important;
+}
+
+/* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
+/* ----------------- */
 
 @keyframes idling {
   0%,
@@ -220,5 +227,25 @@ span > strong,
   50% {
     -webkit-filter: grayscale(100%) blur(1px);
     filter: grayscale(100%) blur(1px);
+  }
+}
+
+@-webkit-keyframes unReadMessage {
+  0%,
+  100% {
+    color: white;
+  }
+  50% {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@keyframes unReadMessage {
+  0%,
+  100% {
+    color: white;
+  }
+  50% {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
