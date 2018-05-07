@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 07-05-2018 14:08:12
- * Version: 1.1.6.4
+ * Last Modified: 07-05-2018 15:04:15
+ * Version: 1.1.6.5
  */
 
 /*** REQUIRED:
@@ -164,12 +164,18 @@ span.dms>.guild {
   animation: dmA 1s cubic-bezier(0.77, -0.35, 0.12, 1.74) alternate infinite !important;
 }
 
+[class*="embedImage-"] img,
+[class*="imageWrapper-"] img {
+  /* Yuks idea. XD */
+  border-radius: var(--Roundificator)
+}
+
 /* ----------------- */
 /*  --- VERSION ---  */
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.1.6.4" !important;
+  content: "HL v1.1.6.5" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
@@ -266,9 +272,9 @@ span.dms>.guild {
 
 @keyframes dmA {
   0% {
-    transform: scale(1);
+            transform: scale(1);
   }
   100% {
-    transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
