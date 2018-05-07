@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 06-05-2018 23:40:40
- * Version: 1.1.6.3
+ * Last Modified: 07-05-2018 14:08:12
+ * Version: 1.1.6.4
  */
 
 /*** REQUIRED:
@@ -156,7 +156,12 @@ span>strong,
 
 [class*="nameUnreadText-"] {
   -webkit-animation: unReadMessage 1.5s ease-in-out infinite;
-          animation: unReadMessage 1.5s ease-in-out infinite;
+  animation: unReadMessage 1.5s ease-in-out infinite;
+}
+
+span.dms>.guild {
+  -webkit-animation: dmA 1s cubic-bezier(0.77, -0.35, 0.12, 1.74) alternate infinite !important;
+  animation: dmA 1s cubic-bezier(0.77, -0.35, 0.12, 1.74) alternate infinite !important;
 }
 
 /* ----------------- */
@@ -164,7 +169,7 @@ span>strong,
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.1.6.3" !important;
+  content: "HL v1.1.6.4" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
@@ -247,5 +252,23 @@ span>strong,
   }
   50% {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@-webkit-keyframes dmA {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+  }
+}
+
+@keyframes dmA {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
   }
 }
