@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 07-05-2018 15:04:15
- * Version: 1.1.6.5
+ * Last Modified: 09-05-2018 15:09:31
+ * Version: 1.1.6.6
  */
 
 /*** REQUIRED:
@@ -170,12 +170,20 @@ span.dms>.guild {
   border-radius: var(--Roundificator)
 }
 
+[class*="membersGroup-"] {
+  color: hsla(0,0%,100%,.4) !important;
+}
+
+[class*="activity-"] strong {
+  color: inherit !important;
+}
+
 /* ----------------- */
 /*  --- VERSION ---  */
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.1.6.5" !important;
+  content: "HL v1.1.6.6" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
