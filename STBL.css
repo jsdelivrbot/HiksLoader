@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 11-05-2018 21:29:21
- * Version: 1.1.6.7
+ * Last Modified: 13-05-2018 03:46:28
+ * Version: 1.1.6.8
  */
 
 /*** REQUIRED:
@@ -95,7 +95,8 @@ ul li strong,
 span>strong,
 [class*="title-"]>strong,
 .april-fools strong,
-.old-h1>strong {
+.old-h1>strong,
+[class*="option-"] strong {
   -webkit-filter: blur(0px) !important;
   filter: blur(0px) !important;
 }
@@ -183,7 +184,7 @@ span.dms>.guild {
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.1.6.7" !important;
+  content: "HL v1.1.6.8" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
