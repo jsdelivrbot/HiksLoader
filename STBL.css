@@ -1,6 +1,6 @@
 /*
  * Author: Hiki
- * Last Modified: 13-05-2018 03:46:28
+ * Last Modified: 12-06-2018 00:44:59
  * Version: 1.1.6.8
  */
 
@@ -177,6 +177,11 @@ span.dms>.guild {
 
 [class*="activity-"] strong {
   color: inherit !important;
+}
+
+.emoji.jumboable {
+  width: 64px;
+  height: 64px;
 }
 
 /* ----------------- */
