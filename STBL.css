@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 12-06-2018 00:44:59
- * Version: 1.1.6.8
+ * Last Modified: 12-06-2018 00:45:42
+ * Version: 1.1.6.9
  */
 
 /*** REQUIRED:
@@ -189,7 +189,7 @@ span.dms>.guild {
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.1.6.8" !important;
+  content: "HL v1.1.6.9" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
