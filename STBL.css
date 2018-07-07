@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 12-06-2018 00:45:42
- * Version: 1.1.6.9
+ * Last Modified: 07-07-2018 19:29:02
+ * Version: 1.1.7.0
  */
 
 /*** REQUIRED:
@@ -127,7 +127,8 @@ span>strong,
 .member-status-dnd,
 [class*="theme-"] [class*="avatar-"] [class*="dnd"],
 [class*="theme-"] [class*="avatar-"] [class*="Dnd"],
-.root-2sNHUF [class*="dnd"] {
+.root-2sNHUF [class*="dnd"],
+[class*="dnd-"] {
   -webkit-animation: dnd 4s cubic-bezier(0.88, -0.02, 0, 0.36) infinite;
   animation: dnd 4s cubic-bezier(0.88, -0.02, 0, 0.36) infinite;
 }
@@ -189,7 +190,7 @@ span.dms>.guild {
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.1.6.9" !important;
+  content: "HL v1.1.7.0" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
