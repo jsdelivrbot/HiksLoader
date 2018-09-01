@@ -315,3 +315,9 @@ span.dms>.guild {
     transform: scale(1.1);
   }
 }
+
+/* Fixes due to Discord changing shit */
+
+[class*="theme-"] .content-yTz4x3 {
+  background: rgba(0, 0, 0, 0.45);
+}
