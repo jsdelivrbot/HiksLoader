@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 13-11-2018 15:38:39
- * Version: 1.1.7.1
+ * Last Modified: 13-11-2018 20:01:43
+ * Version: 1.1.7.2
  */
 
 /*** REQUIRED:
@@ -117,9 +117,9 @@ span>strong,
   font-size: 13px !important;
 }
 
-.member-status-idle>.avatar-small,
-[class*="theme-"] [class*="avatar-"] [class*="idle"],
-[class*="theme-"] [class*="avatar-"] [class*="Idle"] {
+[class*="theme-"] .wrapper-2F3Zv8 [class*="idle"],
+[class*="theme-"] .wrapper-2F3Zv8 [class*="Idle"],
+.root-2sNHUF [class*="idle"] {
   -webkit-animation: idling 3s ease-in-out infinite;
   animation: idling 3s ease-in-out infinite;
 }
@@ -190,7 +190,7 @@ span.dms>.guild {
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.1.7.1" !important;
+  content: "HL v1.1.7.2" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
@@ -296,6 +296,19 @@ span.dms>.guild {
 
 /* Fix for issue with opacity not being the same */
 
-[class*="theme-"] .content-yTz4x3, [class*="theme-"] .guildsWrapper-5TJh6A, #friends DIV[class*="headerBar"], .typeWindows-1za-n7  {
+[class*="theme-"] .content-yTz4x3, [class*="theme-"] .guildsWrapper-5TJh6A,
+#friends DIV[class*="headerBar"],
+.typeWindows-1za-n7,
+.header-2o-2hj {
   background: rgba(0, 0, 0, 0.45);
+}
+
+/* Style tweaks */
+
+.header-2o-2hj {
+  border-right: 1px solid var(--main-color);
+}
+
+[class*="theme-"] .channelTextArea-rNsIhG {
+  border-radius: 10px;
 }
