@@ -1,6 +1,6 @@
 /*
  * Author: Hiki
- * Last Modified: 13-11-2018 20:01:43
+ * Last Modified: 13-11-2018 20:14:28
  * Version: 1.1.7.2
  */
 
@@ -307,8 +307,14 @@ span.dms>.guild {
 
 .header-2o-2hj {
   border-right: 1px solid var(--main-color);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 [class*="theme-"] .channelTextArea-rNsIhG {
   border-radius: 10px;
+}
+
+.search-bar {
+  border-radius: 8px;
 }
