@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 07-07-2018 19:29:02
- * Version: 1.1.7.0
+ * Last Modified: 13-11-2018 15:38:39
+ * Version: 1.1.7.1
  */
 
 /*** REQUIRED:
@@ -190,7 +190,7 @@ span.dms>.guild {
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.1.7.0" !important;
+  content: "HL v1.1.7.1" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
@@ -292,4 +292,10 @@ span.dms>.guild {
   100% {
             transform: scale(1.1);
   }
+}
+
+/* Fix for issue with opacity not being the same */
+
+[class*="theme-"] .content-yTz4x3, [class*="theme-"] .guildsWrapper-5TJh6A, #friends DIV[class*="headerBar"], .typeWindows-1za-n7  {
+  background: rgba(0, 0, 0, 0.45);
 }
