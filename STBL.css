@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 13-11-2018 20:14:28
- * Version: 1.1.7.2
+ * Last Modified: 20-11-2018 04:26:42
+ * Version: 1.1.7.3
  */
 
 /*** REQUIRED:
@@ -190,7 +190,7 @@ span.dms>.guild {
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.1.7.2" !important;
+  content: "HL v1.1.7.3" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
@@ -317,4 +317,9 @@ span.dms>.guild {
 
 .search-bar {
   border-radius: 8px;
+}
+
+.callAvatarBorder-1D_KaE.voice-2D-tt_.speaking-oCqYMI {
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 3px var(--voiceColor);
 }
