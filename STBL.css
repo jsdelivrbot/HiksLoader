@@ -319,7 +319,7 @@ span.dms>.guild {
   border-radius: 8px;
 }
 
-.callAvatarBorder-1D_KaE.voice-2D-tt_.speaking-oCqYMI {
+.callAvatarBorder-1D_KaE.voice-2D-tt_.speaking-oCqYMI, .avatarSpeaking-1wJCNq {
   border-radius: 50%;
   box-shadow: inset 0 0 0 3px var(--voiceColor);
 }
